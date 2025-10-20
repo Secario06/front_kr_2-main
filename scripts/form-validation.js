@@ -22,7 +22,7 @@ class FormValidator {
     validateField(field) {
         const value = field.value.trim();
         
-        // Required field validation
+        // Required fieldvalidation
         if (field.hasAttribute('required') && !value) {
             this.showFieldError(field, 'Это поле обязательно для заполнения');
             return false;
